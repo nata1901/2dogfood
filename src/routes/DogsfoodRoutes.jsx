@@ -15,7 +15,8 @@ const DogfoodRoutes = ({ products, user, setUser, setSrvProducts }) => {
 			<div className="containerGrid">
 				<Routes>
 					<Route path="/" element={<Main />} />
-					<Route path="/catalog" element={<Catalog products={products} setSrvProducts={setSrvProducts} />} />
+					<Route path="/catalog" element={<Catalog products={products} 
+					setSrvProducts={setSrvProducts} />} />
 					<Route path="/profile" element={<Profile />} />
 					<Route path="/prod_edit" element={<ModalProd />} />
 					<Route path="/add" element={<ModalProd />} />

@@ -18,7 +18,8 @@ const Header = ({ user, setUser, setModalActive }) => {
 	const { userId, serverProducts, basketArr } = useContext(Context)
 
 	useEffect(() => {
-		setLikeCnt(serverProducts?.filter(el => el.likes.includes(userId)).length)
+		setLikeCnt(serverProducts?.filter
+			(el => el.likes.includes(userId)).length)
 	}, [serverProducts]);
 
 	useEffect(() => {

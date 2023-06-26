@@ -1,5 +1,5 @@
 import Card from "../components/Card";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Context from "../context";
 import { Button, Nav } from "react-bootstrap";
 const Catalog = ({ products }) => {
